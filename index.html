@@ -23,10 +23,14 @@ body{margin:0;background:var(--bg);color:var(--ink);font:300 1.02rem/1.6 Outfit,
 .no-gl body{background:radial-gradient(60% 40% at 50% 20%,rgba(183,255,0,.16),var(--bg))}
 a,button{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--acT);outline-offset:3px}
 header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:6;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem clamp(1rem,4vw,3.5rem);background:linear-gradient(var(--bg) 62%,transparent)}
-.logo{display:flex;align-items:center;gap:.6rem;font-weight:500;font-size:1.35rem;text-decoration:none;letter-spacing:-.01em}.logo b{color:var(--acT);font-weight:500}.logo img {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
+.logo svg {
+  width: 2.1rem;
+  height: 2.1rem;
+  stroke: var(--acT);
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }
 nav{display:flex;gap:2.2rem}nav a{text-decoration:none;color:var(--mute);font-size:.92rem;padding:.3rem 0;border-bottom:1px solid transparent}nav a:hover,nav a.on{color:var(--ink);border-color:var(--acT)}
 .hr{display:flex;gap:.8rem;align-items:center}
